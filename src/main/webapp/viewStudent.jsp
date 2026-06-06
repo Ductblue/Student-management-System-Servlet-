@@ -19,6 +19,8 @@
     <th>Email</th>
     <th>Course</th>
     <th>Age</th>
+    <th>Edit</th>
+    <th>Delete</th>
 </tr>
 
 <%
@@ -34,6 +36,14 @@ for(Student s : students){
     <td><%= s.getEmail() %></td>
     <td><%= s.getCourse() %></td>
     <td><%= s.getAge() %></td>
+    <td>
+    <a href="editStudent?id=<%=s.getId()%>">
+        Edit
+    </a>
+    </td>
+    <td>
+    <a href="deleteStudent?id=<%=s.getId() %>">Delete</a>
+    </td>
 </tr>
 
 <%
