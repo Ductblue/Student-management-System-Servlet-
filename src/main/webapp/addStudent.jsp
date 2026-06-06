@@ -14,7 +14,7 @@
     <input type="text" name="name"><br><br>
 
     Email:
-    <input type="email" name="email"><br><br>
+    <input type="email" required name="email"><br><br>
 
     Course:
     <input type="text" name="course"><br><br>

@@ -11,7 +11,7 @@
 
 <h2>Student List</h2>
 
-<table border="1">
+<table class="table table-bordered">
 
 <tr>
     <th>ID</th>
@@ -42,7 +42,10 @@ for(Student s : students){
     </a>
     </td>
     <td>
-    <a href="deleteStudent?id=<%=s.getId() %>">Delete</a>
+    <a href="deleteStudent?id=<%=s.getId()%>"
+   onclick="return confirm('Are you sure?')">
+   Delete
+</a>
     </td>
 </tr>
 

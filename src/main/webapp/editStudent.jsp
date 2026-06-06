@@ -19,7 +19,7 @@ Name:
 <br><br>
 
 Email:
-<input type="email"
+<input type="email" required
        name="email"
        value="<%=student.getEmail()%>">
 
